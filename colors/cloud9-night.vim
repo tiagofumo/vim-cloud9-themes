@@ -11,11 +11,13 @@ let s:line = "2a2a2a"
 let s:comment = "969896"
 let s:red = "d54e53"
 let s:orange = "e78c45"
-let s:yellow = "e7c547"
+"let s:yellow = "e7c547"
+let s:yellow = "e7b047"
 let s:green = "b9ca4a"
 let s:aqua = "70c0b1"
 let s:blue = "7aa6da"
 let s:purple = "c397d8"
+let s:white = "ffffff"
 let s:window = "4d5057"
 
 set background=dark
@@ -271,7 +273,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Conditional", s:foreground, "", "")
 	call <SID>X("Repeat", s:foreground, "", "")
 	call <SID>X("Structure", s:purple, "", "")
-	call <SID>X("Function", s:blue, "", "")
+	call <SID>X("Function", s:white, "", "")
 	call <SID>X("Constant", s:orange, "", "")
 	call <SID>X("String", s:green, "", "")
 	call <SID>X("Special", s:foreground, "", "")
@@ -300,16 +302,26 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("phpMemberSelector", s:foreground, "", "")
 
 	" Ruby Highlighting
-	call <SID>X("rubySymbol", s:green, "", "")
+	call <SID>X("rubySymbol", s:white, "", "")
 	call <SID>X("rubyConstant", s:yellow, "", "")
 	call <SID>X("rubyAttribute", s:blue, "", "")
 	call <SID>X("rubyInclude", s:blue, "", "")
 	call <SID>X("rubyLocalVariableOrMethod", s:orange, "", "")
-	call <SID>X("rubyCurlyBlock", s:orange, "", "")
+	call <SID>X("rubyCurlyBlock", s:white, "", "")
 	call <SID>X("rubyStringDelimiter", s:green, "", "")
 	call <SID>X("rubyInterpolationDelimiter", s:orange, "", "")
 	call <SID>X("rubyConditional", s:purple, "", "")
 	call <SID>X("rubyRepeat", s:purple, "", "")
+	call <SID>X("rubyBlock", s:aqua, "", "")
+	call <SID>X("rubyRailsRenderMethod", s:blue, "", "")
+	call <SID>X("rubyControl", s:purple, "", "")
+	call <SID>X("rubyBlockParameter", s:blue, "", "")
+	call <SID>X("rubyPredefinedConstant", s:yellow, "", "")
+	call <SID>X("rubyRailsTestMethod", s:blue, "", "")
+	call <SID>X("rubyKeyword", s:purple, "", "")
+	call <SID>X("erubyDelimiter", s:white, "", "")
+	call <SID>X("erubyRailsHelperMethod", s:blue, "", "")
+
 
 	" Python Highlighting
 	call <SID>X("pythonInclude", s:purple, "", "")
@@ -345,6 +357,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("htmlTagName", s:red, "", "")
 	call <SID>X("htmlArg", s:red, "", "")
 	call <SID>X("htmlScriptTag", s:red, "", "")
+	call <SID>X("htmlTitle", s:white, "", "")
 
 	" Diff Highlighting
 	call <SID>X("diffAdded", s:green, "", "")
