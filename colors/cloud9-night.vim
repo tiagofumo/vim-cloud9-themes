@@ -13,7 +13,7 @@ let s:comment = "969896"
 let s:red = "d54e53"
 let s:orange = "e78c45"
 "let s:yellow = "e7c547"
-let s:yellow = "e7b047"
+let s:yellow = "e7bF47"
 let s:green = "b9ca4a"
 let s:aqua = "70c0b1"
 let s:blue = "7aa6da"
@@ -269,7 +269,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" Standard Highlighting
 	call <SID>X("Comment", s:comment, "", "")
 	call <SID>X("Todo", s:comment, s:background, "")
-	call <SID>X("Title", s:comment, "", "")
+	call <SID>X("Title", s:white, "", "")
 	call <SID>X("Identifier", s:red, "", "none")
 	call <SID>X("Statement", s:foreground, "", "")
 	call <SID>X("Conditional", s:foreground, "", "")
@@ -317,7 +317,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 "	call <SID>X("rubyBlock", s:aqua, "", "")
 	call <SID>X("rubyRailsRenderMethod", s:blue, "", "")
 	call <SID>X("rubyControl", s:purple, "", "")
-	call <SID>X("rubyBlockParameter", s:blue, "", "")
+	call <SID>X("rubyBlockParameter", s:white, "", "")
 	call <SID>X("rubyPredefinedConstant", s:yellow, "", "")
 	call <SID>X("rubyRailsTestMethod", s:blue, "", "")
 	call <SID>X("rubyKeyword", s:purple, "", "")
@@ -327,6 +327,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("rubyRailsARCallbackMethod", s:white, "", "")
 	call <SID>X("rubyRailsARValidationMethod", s:white, "", "")
 	call <SID>X("rubyRailsARClassMethod", s:white, "", "")
+	call <SID>X("rubyRailsARMethod", s:white, "", "")
 	call <SID>X("rubyRailsFilterMethod", s:white, "", "")
  	call <SID>X("rubyRegexpComment", s:red, "", "")
  	call <SID>X("rubyRegexpParens", s:red, "", "")
@@ -340,10 +341,41 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
  	call <SID>X("rubyRegexp", s:red, "", "")
  	call <SID>X("rubyRegexpDelimiter", s:red, "", "")
  	call <SID>X("rubyPseudoVariable", s:red, "", "")
+ 	call <SID>X("rubyInterpolationDelimiter", s:white, "", "")
+ 	call <SID>X("rubyAccess", s:purple, "", "")
+ 	call <SID>X("rubyException", s:blue, "", "")
 
 	" ERuby Highlighting
 	call <SID>X("erubyDelimiter", s:white, "", "")
 	call <SID>X("erubyRailsHelperMethod", s:blue, "", "")
+	call <SID>X("erubyRailsRenderMethod", s:blue, "", "")
+
+	" CSS highlighting
+	call <SID>X("sassInclude", s:purple, "", "")
+	call <SID>X("cssVendor", s:white, "", "")
+	call <SID>X("cssUIProp", s:yellow, "", "")
+	call <SID>X("cssBoxProp", s:yellow, "", "")
+	call <SID>X("cssTextProp", s:yellow, "", "")
+	call <SID>X("cssFontProp", s:yellow, "", "")
+	call <SID>X("cssBorderProp", s:yellow, "", "")
+	call <SID>X("cssDimensionProp", s:yellow, "", "")
+	call <SID>X("cssListProp", s:yellow, "", "")
+	call <SID>X("cssPositioningProp", s:yellow, "", "")
+	call <SID>X("cssPositioningAttr", s:yellow, "", "")
+	call <SID>X("cssFontAttr", s:orange, "", "")
+	call <SID>X("cssTagName", s:red, "", "")
+	call <SID>X("cssAttrRegion", s:red, "", "")
+	call <SID>X("cssNoise", s:red, "", "")
+	call <SID>X("cssPseudoClassId", s:red, "", "")
+	call <SID>X("sassAmpersand", s:white, "", "")
+	call <SID>X("sassClass", s:red, "", "")
+	call <SID>X("sassIdChar", s:red, "", "")
+	call <SID>X("sassProperty", s:yellow, "", "")
+
+	" Cucumber Highlighting
+	call <SID>X("cucumberThen", s:purple, "", "")
+	call <SID>X("cucumberGiven", s:purple, "", "")
+	call <SID>X("cucumberWhen", s:purple, "", "")
 
 	" Python Highlighting
 	call <SID>X("pythonInclude", s:purple, "", "")
@@ -373,13 +405,36 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
 	call <SID>X("javaScriptNumber", s:orange, "", "")
 	call <SID>X("javaScriptMember", s:orange, "", "")
+	call <SID>X("javascriptParens", s:white, "", "")
+	call <SID>X("javascriptEndColons", s:white, "", "")
+	call <SID>X("javascriptNull", s:orange, "", "")
+	call <SID>X("javascriptIdentifier", s:purple, "", "")
+	call <SID>X("javascriptHtmlElemAttrs", s:orange, "", "")
+	call <SID>X("javascriptLabel", s:purple, "", "")
+	call <SID>X("javascriptBranch", s:purple, "", "")
+	call <SID>X("javascriptFuncKeyword", s:purple, "", "")
+	call <SID>X("javascriptFuncArg", s:orange, "", "")
+	call <SID>X("javascriptFuncDef", s:blue, "", "")
+	call <SID>X("javascriptStatement", s:purple, "", "")
+	call <SID>X("javascriptBrowserObjects", s:red, "", "")
+	call <SID>X("javascriptMessage", s:blue, "", "")
+	call <SID>X("javascriptFuncExp", s:blue, "", "")
+	call <SID>X("javascriptGlobalObjects", s:red, "", "")
+	call <SID>X("javascriptFuncComma", s:white, "", "")
+	call <SID>X("javascriptOperator", s:purple, "", "")
+	call <SID>X("javascriptOperator", s:purple, "", "")
+	call <SID>X("javascriptFunctionKey", s:blue, "", "")
+	call <SID>X("javascriptPrototype", s:orange, "", "") " String.prototype is blue
 
 	" HTML Highlighting
 	call <SID>X("htmlTag", s:red, "", "")
+	call <SID>X("htmlH1", s:white, "", "")
 	call <SID>X("htmlTagName", s:red, "", "")
+	call <SID>X("htmlTagN", s:red, "", "")
 	call <SID>X("htmlArg", s:red, "", "")
 	call <SID>X("htmlScriptTag", s:red, "", "")
 	call <SID>X("htmlTitle", s:white, "", "")
+	call <SID>X("htmlLink", s:white, "", "")
 
 	" Diff Highlighting
 	call <SID>X("diffAdded", s:green, "", "")
