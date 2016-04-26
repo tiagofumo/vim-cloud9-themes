@@ -344,6 +344,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
  	call <SID>X("rubyInterpolationDelimiter", s:white, "", "")
  	call <SID>X("rubyAccess", s:purple, "", "")
  	call <SID>X("rubyException", s:blue, "", "")
+ 	call <SID>X("rubyClass", s:purple, "", "")
+ 	call <SID>X("rubyInstanceVariable", s:red, "", "")
 
 	" ERuby Highlighting
 	call <SID>X("erubyDelimiter", s:white, "", "")
