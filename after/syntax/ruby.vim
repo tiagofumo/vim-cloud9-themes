@@ -1,0 +1,5 @@
+"syntax match OperatorChars "?\|+\|-\|\*\|;\|:\|,\|<\|>\|&\||\|!\|\~\|%\|=\|)\|(\|{\|}\|\.\|\[\|\]\|/\(/\|*\)\@!"
+" syntax match OperatorChars "+\|-\|\*\|<\|>\|&\||\|!\|\~\|%\|=\|/\(/\|*\)\@!"
+syntax match OperatorChars "+\|-\|\*\|<\|>\|&\||\|!\|\~\|%\|=\|@!"
+syntax match rubyRailsRootUrl "root_url"
+syntax match rubyRailsControllerMethod "require"
