@@ -15,6 +15,7 @@ let s:orange = "e78c45"
 "let s:yellow = "e7c547"
 let s:yellow = "e7bF47"
 let s:green = "b9ca4a"
+let s:darkerGreen = "99ca2a"
 let s:aqua = "70c0b1"
 let s:blue = "7aa6da"
 let s:purple = "c397d8"
@@ -375,6 +376,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("sassClass", s:red, "", "")
 	call <SID>X("sassIdChar", s:red, "", "")
 	call <SID>X("sassProperty", s:yellow, "", "")
+
+	"NERDtree Highlighting
+	if exists('g:HighlightFolders')
+		call <SID>X("NERDTreeDir", s:darkerGreen, "", "")
+		"call <SID>X("NERDTreeDir", s:white, "", "")
+		call <SID>X("NERDTreeDirSlash", s:white, "", "")
+	endif
 
 	" Cucumber Highlighting
 	call <SID>X("cucumberThen", s:purple, "", "")
