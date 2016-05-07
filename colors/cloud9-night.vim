@@ -370,6 +370,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("cssFontAttr", s:orange, "", "")
 	call <SID>X("cssTagName", s:red, "", "")
 	call <SID>X("cssAttrRegion", s:red, "", "")
+	call <SID>X("cssBackgroundProp", s:yellow, "", "")
 	call <SID>X("cssNoise", s:red, "", "")
 	call <SID>X("cssPseudoClassId", s:red, "", "")
 	call <SID>X("sassAmpersand", s:white, "", "")
