@@ -413,6 +413,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" JavaScript Highlighting
 	call <SID>X("javaScriptBraces", s:foreground, "", "")
+	call <SID>X("javascriptReturn", s:purple, "", "")
+	call <SID>X("javascriptImport", s:purple, "", "")
+	call <SID>X("javascriptClassKeyword", s:purple, "", "")
+	call <SID>X("javascriptClassExtends", s:purple, "", "")
 	call <SID>X("javaScriptFunction", s:purple, "", "")
 	call <SID>X("javaScriptConditional", s:purple, "", "")
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
@@ -438,6 +442,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javascriptOperator", s:purple, "", "")
 	call <SID>X("javascriptFunctionKey", s:blue, "", "")
 	call <SID>X("javascriptPrototype", s:orange, "", "") " String.prototype is blue
+
+	" JSX Highlighting
+	call <SID>X("xmlTagName", s:red, "", "")
+	call <SID>X("jsxRegion", s:green, "", "")
 
 	" HTML Highlighting
 	call <SID>X("htmlTag", s:red, "", "")
