@@ -412,6 +412,14 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("coffeeConditional", s:purple, "", "")
 
 	" JavaScript Highlighting
+	call <SID>X("jsReturn", s:purple, "", "")
+	call <SID>X("jsStorageClass", s:purple, "", "")
+	call <SID>X("jsModules", s:purple, "", "")
+	call <SID>X("jsModuleWords", s:purple, "", "")
+	call <SID>X("jsGlobalObjects", s:red, "", "")
+	call <SID>X("jsDomElemFuncs", s:blue, "", "")
+	call <SID>X("jsArrowFunction", s:aqua, "", "")
+
 	call <SID>X("javaScriptBraces", s:foreground, "", "")
 	call <SID>X("javascriptReturn", s:purple, "", "")
 	call <SID>X("javascriptImport", s:purple, "", "")
@@ -444,8 +452,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javascriptPrototype", s:orange, "", "") " String.prototype is blue
 
 	" JSX Highlighting
+	call <SID>X("xmlTag", s:red, "", "")
 	call <SID>X("xmlTagName", s:red, "", "")
 	call <SID>X("jsxRegion", s:green, "", "")
+	call <SID>X("xmlAttrib", s:red, "", "")
+	call <SID>X("xmlEqual", s:aqua, "", "")
 
 	" HTML Highlighting
 	call <SID>X("htmlTag", s:red, "", "")
