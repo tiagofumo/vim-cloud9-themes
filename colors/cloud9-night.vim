@@ -366,6 +366,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("cssDimensionProp", s:yellow, "", "")
 	call <SID>X("cssListProp", s:yellow, "", "")
 	call <SID>X("cssPositioningProp", s:yellow, "", "")
+	call <SID>X("cssPageProp", s:yellow, "", "")
 	call <SID>X("cssPositioningAttr", s:yellow, "", "")
 	call <SID>X("cssFontAttr", s:orange, "", "")
 	call <SID>X("cssTagName", s:red, "", "")
@@ -377,6 +378,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("sassClass", s:red, "", "")
 	call <SID>X("sassIdChar", s:red, "", "")
 	call <SID>X("sassProperty", s:yellow, "", "")
+
 
 	"NERDtree Highlighting
 	if exists('g:HighlightFolders')
