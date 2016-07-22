@@ -362,6 +362,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("cssBoxProp", s:yellow, "", "")
 	call <SID>X("cssTextProp", s:yellow, "", "")
 	call <SID>X("cssFontProp", s:yellow, "", "")
+	call <SID>X("cssIEUIProp", s:yellow, "", "")
+	call <SID>X("cssColorProp", s:yellow, "", "")
 	call <SID>X("cssBorderProp", s:yellow, "", "")
 	call <SID>X("cssDimensionProp", s:yellow, "", "")
 	call <SID>X("cssListProp", s:yellow, "", "")
