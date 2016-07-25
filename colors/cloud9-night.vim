@@ -380,6 +380,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("sassClass", s:red, "", "")
 	call <SID>X("sassIdChar", s:red, "", "")
 	call <SID>X("sassProperty", s:yellow, "", "")
+	call <SID>X("sassCssAttribute", s:yellow, "", "")
 
 
 	"NERDtree Highlighting
