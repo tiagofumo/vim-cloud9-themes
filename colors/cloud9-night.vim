@@ -428,6 +428,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("jsThis", s:red, "", "")
   call <SID>X("jsDomElemFuncs", s:blue, "", "")
   call <SID>X("jsArrowFunction", s:aqua, "", "")
+  call <SID>X("jsConditional", s:purple, "", "")
+  call <SID>X("jsNull", s:orange, "", "")
 
   call <SID>X("javaScriptBraces", s:foreground, "", "")
   call <SID>X("javascriptReturn", s:purple, "", "")
