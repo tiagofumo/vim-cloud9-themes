@@ -435,6 +435,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("jsException", s:purple, "", "")
   call <SID>X("jsTry", s:purple, "", "")
   call <SID>X("jsCatch", s:purple, "", "")
+  call <SID>X("jsFinally", s:purple, "", "")
   call <SID>X("jsArrowFunction", s:aqua, "", "")
   call <SID>X("jsExceptions", s:red, "", "")
   call <SID>X("jsGlobalObjects", s:red, "", "")
