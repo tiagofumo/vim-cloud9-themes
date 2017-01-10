@@ -419,6 +419,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   " JavaScript Highlighting
   call <SID>X("jsReturn", s:purple, "", "")
   call <SID>X("jsStorageClass", s:purple, "", "")
+  call <SID>X("jsClassMethodType", s:purple, "", "")
   call <SID>X("jsModules", s:purple, "", "")
   call <SID>X("jsModuleDefault", s:purple, "", "")
   call <SID>X("jsModuleWords", s:purple, "", "")
