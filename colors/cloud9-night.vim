@@ -273,8 +273,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("Title", s:white, "", "")
   call <SID>X("Identifier", s:red, "", "none")
   call <SID>X("Statement", s:foreground, "", "")
-  call <SID>X("Conditional", s:foreground, "", "")
-  call <SID>X("Repeat", s:foreground, "", "")
+  call <SID>X("Conditional", s:purple, "", "")
+  call <SID>X("Repeat", s:purple, "", "")
   call <SID>X("Structure", s:purple, "", "")
   call <SID>X("Function", s:white, "", "")
   call <SID>X("Constant", s:orange, "", "")
@@ -481,6 +481,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("javascriptOperator", s:purple, "", "")
   call <SID>X("javascriptFunctionKey", s:blue, "", "")
   call <SID>X("javascriptPrototype", s:orange, "", "") " String.prototype is blue
+
+  " Flutter Highlighting
+  call <SID>X("flutterWidget", s:yellow, "", "")
+  call <SID>X("dartStatement", s:purple, "", "")
 
   " JSX Highlighting
   call <SID>X("xmlTag", s:red, "", "")
