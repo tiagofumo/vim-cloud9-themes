@@ -486,6 +486,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("flutterWidget", s:yellow, "", "")
   call <SID>X("dartStatement", s:purple, "", "")
   call <SID>X("dartLabel", s:purple, "", "")
+  call <SID>X("dartAssert", s:red, "", "")
+  call <SID>X("dartMetadata", s:red, "", "")
+  call <SID>X("dartInterpolation", s:white, "", "")
 
   " JSX Highlighting
   call <SID>X("xmlTag", s:red, "", "")
