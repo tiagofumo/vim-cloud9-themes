@@ -324,8 +324,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("rubyRailsTestMethod", s:blue, "", "")
   call <SID>X("rubyKeyword", s:purple, "", "")
   call <SID>X("rubyRailsMethod", s:red, "", "")
+  call <SID>X("rubyRailsMethod2", s:blue, "", "")
   call <SID>X("rubyRailsARAssociationMethod", s:blue, "", "")
-  call <SID>X("rubyRailsControllerMethod", s:white, "", "")
   call <SID>X("rubyRailsARCallbackMethod", s:white, "", "")
   call <SID>X("rubyRailsARValidationMethod", s:white, "", "")
   call <SID>X("rubyRailsARClassMethod", s:white, "", "")
@@ -351,6 +351,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("rubyInstanceVariable", s:red, "", "")
   call <SID>X("rubyMacro", s:blue, "", "")
   call <SID>X("rubyEntity", s:blue, "", "")
+  call <SID>X("rubyResponse", s:blue, "", "")
+  call <SID>X("rubyViewHelper", s:blue, "", "")
 
   " ERuby Highlighting
   call <SID>X("erubyDelimiter", s:white, "", "")
