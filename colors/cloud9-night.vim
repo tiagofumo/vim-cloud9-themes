@@ -501,6 +501,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("xmlTag", s:red, "", "")
   call <SID>X("xmlTagName", s:red, "", "")
   call <SID>X("jsxRegion", s:green, "", "")
+  call <SID>X("jsxOpenPunct", s:red, "", "")
+  call <SID>X("jsxClosePunct", s:red, "", "")
+  call <SID>X("jsxAttrib", s:red, "", "")
   call <SID>X("xmlAttrib", s:red, "", "")
   call <SID>X("xmlEqual", s:aqua, "", "")
 
