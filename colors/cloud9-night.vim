@@ -360,7 +360,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("erubyRailsRenderMethod", s:blue, "", "")
 
   " CSS highlighting
-  call <SID>X("sassInclude", s:purple, "", "")
   call <SID>X("cssVendor", s:white, "", "")
   call <SID>X("cssUIProp", s:yellow, "", "")
   call <SID>X("cssBoxProp", s:yellow, "", "")
@@ -385,7 +384,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("sassIdChar", s:red, "", "")
   call <SID>X("sassProperty", s:yellow, "", "")
   call <SID>X("sassCssAttribute", s:yellow, "", "")
-
+  call <SID>X("sassInclude", s:purple, "", "")
 
   "NERDtree Highlighting
   if exists('g:HighlightFolders')
